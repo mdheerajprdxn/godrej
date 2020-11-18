@@ -113,6 +113,12 @@ nav {
   align-items: center;
   /* width: 100%; */
 }
+
+nav.wrapper{
+  max-width: 1500px;
+  margin: auto;
+}
+
 nav h1 {
   margin-right: 20px;
 }
@@ -175,8 +181,9 @@ nav ul li a img {
 .residences .wrapper {
   /* margin: 0; */
   margin-left: 7%;
-  width: 100%;
   margin-right: 0;
+  margin:auto;
+  width: 100%;
   display: flex;
   /* align-items: center; */
   align-items: stretch;
@@ -226,12 +233,19 @@ nav ul li a img {
   margin: 20px 0;
   color: #777;
   font-size: 1.1rem;
-  /* font-weight: 600; */
 
 }
+.slider-container{
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 1360px;
+  margin: auto;
+}
 .slider-images {
+  max-width: 1360px;
   display: flex;
-  width: 90%;
+  width: 100%;
+  background-color: #000;
 }
 #slider{
   width: 100%;
@@ -240,12 +254,9 @@ nav ul li a img {
 }
 
 .slider-images img {
+  flex-basis: 100%;
+  flex-shrink: 0;
   height: auto;
-  width: 100%;
-  object-fit: cover;
-  /* max-width:100%; */
-/* max-height:100%; */
-  /* padding: 0 20px; */
 }
 .floorplan .slider-icons {
   padding: 30px 20px;
@@ -270,11 +281,6 @@ nav ul li a img {
 
 
 /* Testimonial end */
-
-
-
-
-
 
 
 /*=================================
@@ -330,9 +336,68 @@ footer .wrapper * {
 =================================*/ 
 
 /*media query starts*/
+
+/* 1024px, 995px, 767px, 540px, 480px */
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
+@media only screen and (max-width: 1600px) {
+  .residences .wrapper {
+    /* margin: 0; */
+    margin-left: 7%;
+  }
 }  
+
+
+@media only screen and (max-width: 1240px) {
+  
+.residences .wrapper {
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.residences .wrapper .desc {
+  
+  max-width: 1360px;
+  flex-basis: 86%;
+  margin: 0 auto;
+}
+.residences .wrapper * {
+  flex-basis: 100%;
+
+}
+  footer .wrapper {
+    flex-wrap: wrap;
+  }
+  footer .wrapper .footer-column {
+    flex-basis: 50%;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  footer .wrapper .footer-column {
+    flex-basis: 100%;
+  }
+  
+.residences h2 {
+
+  font-size: 2rem;
+}
+.floorplan h2 {
+font-size: 2rem;
+}
+
+.testimonial h2 {
+  font-size: 2rem;
+
+}
+}
+
+
+@media only screen and (max-width: 540px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
