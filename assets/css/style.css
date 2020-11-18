@@ -147,12 +147,59 @@ nav ul li a:hover {
   border: none;
 }
 
-nav ul li img {
+nav ul li a img {
   width: auto;
   margin: auto;
+  height: 35px;
+}
+
+/* Residencies Start */
+
+.residences {
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.residences .wrapper {
+  /* margin: 0; */
+  margin-left: 7%;
+  width: 100%;
+  margin-right: 0;
+  display: flex;
+  /* align-items: center; */
+  align-items: stretch;
+}
+
+.residences .wrapper * {
+  flex-basis: 50%;
+  /* height: 100%; */
+}
+.residences h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  /* margin-top: 70px; */
+}
+
+.residences .desc {
+  padding: 100px 0;
+}
+.residences .desc p{
+  font-weight: 600;
+  color: #777;
+  margin: 20px 0;
+  width: 80%;
+  /* margin: 40px; */
 }
 
 
+.residences div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Residencies End */
 
 /*=================================
   Header styling ends here
