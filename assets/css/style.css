@@ -339,11 +339,21 @@ footer .wrapper * {
 
 /* 1024px, 995px, 767px, 540px, 480px */
 /*media query for 995px starts here*/
+
+@media only screen and (min-width: 1600px) {
+
+  .slider-videos img{
+    max-width: 1360px;
+    display: block;
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 1600px) {
   .residences .wrapper {
     /* margin: 0; */
     margin-left: 7%;
   }
+ 
 }  
 
 
@@ -363,6 +373,13 @@ footer .wrapper * {
 .residences .wrapper * {
   flex-basis: 100%;
 
+}
+.slider-videos {
+  max-width: 1360px;
+
+}
+.testimonial video {
+  max-width: 1360px;
 }
   footer .wrapper {
     flex-wrap: wrap;
