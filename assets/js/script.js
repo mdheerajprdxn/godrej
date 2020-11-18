@@ -24,6 +24,8 @@ function slideRight(e) {
   if (counter >= images.length) {
     counter = 0;
   }
+
+  size = images[counter].clientWidth;
   imageSlider.style.transform = "translateX(" + -size * counter + "px)";
 }
 
