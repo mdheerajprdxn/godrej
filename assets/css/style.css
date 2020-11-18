@@ -262,6 +262,13 @@ nav ul li a img {
   margin: 100px 5%;
   font-style: italic;
 }
+
+.testimonial video {
+  width: 100%;
+  display: none;
+}
+
+
 /* Testimonial end */
 
 
