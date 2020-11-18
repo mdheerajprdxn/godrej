@@ -37,3 +37,17 @@ function slideLeft(e) {
   imageSlider.style.transition = "transform .4s ease-in-out";
   imageSlider.style.transform = "translateX(" + -size * counter + "px)";
 }
+
+var videoImage = document.querySelector(".slider-videos img");
+let video = document.querySelector(".testimonial video");
+
+videoImage.addEventListener("click", playVideo);
+
+function playVideo() {
+  let height = videoImage.clientHeight;
+  videoImage.style.display = "none";
+  console.log(height);
+  video.style.display = "block";
+  video.style.height = height + "px";
+  video.play();
+}
