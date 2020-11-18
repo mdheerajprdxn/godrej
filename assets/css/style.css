@@ -107,8 +107,50 @@ li {
   Header styling starts here
 =================================*/
 
+nav {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  /* width: 100%; */
+}
+nav h1 {
+  margin-right: 20px;
+}
 
+nav ul {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+nav ul li {
+  text-transform: uppercase;
+  border-left: 1px solid #999;
+  /* padding-left: 10px; */
+  flex-grow: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #777;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: #519CC5;
+}
+.phone-icon {
+  border: none;
+}
+
+nav ul li img {
+  width: auto;
+  margin: auto;
+}
 
 
 
