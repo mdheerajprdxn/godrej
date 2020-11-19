@@ -278,8 +278,37 @@ nav ul li a img {
   width: 100%;
   display: none;
 }
+.slider-videos {
+  display: flex;
+  max-height: 700px;
+}
+.video-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-videos img{
+  height: auto;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.testimonial .slider-icons {
+  padding: 10px 0px;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  /* max-width: 100vw; */
+  transform: translateY(-100%);
+  /* bottom: 50%; */
+  z-index: 5;
+}
 
-
+.testimonial .slider-icons a {
+  margin: 20px;
+}
 /* Testimonial end */
 
 
@@ -373,8 +402,12 @@ footer .icon:before{
 footer .icon:hover:before{
   background-color: #777;
 }
+.twitter {
+  /* text-indent: 100em; */
+}
 .twitter:before{
   content: "\f099";
+
 }
 
 .facebook:before{
@@ -395,11 +428,11 @@ footer .icon:hover:before{
 
 @media only screen and (min-width: 1600px) {
 
-  .slider-videos img{
+  /* .slider-videos img{
     max-width: 1360px;
     display: block;
     margin: auto;
-  }
+  } */
 }
 @media only screen and (max-width: 1600px) {
   .residences .wrapper {
@@ -414,7 +447,7 @@ footer .icon:hover:before{
   .backdrop {
     height: 100vh;
     width: 100vw;
-    z-index: 10;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     display: none;
@@ -423,7 +456,22 @@ footer .icon:hover:before{
     justify-content: space-between;
   }
   nav ul {
-    display: none;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    transform: translateX(300px);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 15;
+    background-color: white;
+    height: 100vh;
+    text-align: left;
+  }
+  
+  nav ul li {
+    display: block;
+    border: none;
+    margin-top: 20px;
   }
   .hamburger {
     display: block;
