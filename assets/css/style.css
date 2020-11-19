@@ -333,7 +333,7 @@ footer .wrapper * {
   /* flex-basis: 27%; */
 }
 
-.footer-column div {
+.footer-column li {
   margin: 20px 0;
   display: flex;
   flex-flow: column;
@@ -345,14 +345,14 @@ footer .wrapper * {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-.footer-column div a {
+.footer-column li a {
   text-decoration: none;
   color: #777;
   font-weight: 600;
   font-size: 0.9rem;
   margin: 5px 0;
 }
-.footer-column div .blue-link:hover {
+.footer-column li .blue-link:hover {
   color: #519CC5;
   text-decoration: none;
 }
