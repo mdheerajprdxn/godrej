@@ -99,12 +99,14 @@ function videoSlideLeft(e) {
 // Play Video
 var videoImage = document.querySelector(".slider-videos");
 let video = document.querySelector(".testimonial video");
+let sliderButtons = document.querySelector(".testimonial .slider-icons");
 
 videoImage.addEventListener("click", playVideo);
 
 function playVideo() {
   let height = videoImage.clientHeight;
   videoImage.style.display = "none";
+  sliderButtons.style.display = "none";
   console.log(height);
   video.style.display = "block";
   video.style.height = height + "px";
